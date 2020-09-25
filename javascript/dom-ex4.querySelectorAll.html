@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <h1 class="note" id="head1">Lorem.</h1>
+    <h1 class="note error" id="head2">Maiores.</h1>
+    <h1 class="note error" id="head3">Quae.</h1>
+    <h1 id="head4">Necessitatibus?</h1>
+    <h1 id="head5">Facilis?</h1>
+    <script>
+        var heads = document.querySelectorAll("h1");
+        // h1 의 태그를 검색
+        console.log(heads.length);
+        
+        var notes = document.querySelectorAll(".note");
+        console.log(notes.length);
+        var Error = document.querySelectorAll(".error");
+        console.log(Error.length);
+        var notesError = document.querySelectorAll(".note.error");
+        console.log(notesError.length);
+
+        
+        var ids = document.querySelectorAll("#head1");
+        console.log(ids.length);
+
+        for (var i = 0; i < notesError; i++) {
+            notesError[i] = txt;
+        }
+
+    </script>
+</body>
+</html>

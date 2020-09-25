@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <script>
+        function test1(myParam) {   // 함수 함수명(파라미터)
+            console.log("test1 실행")
+            console.log(myParam);
+        }
+        function test2() {
+            console.log("test2 실행")
+        }
+        test2();
+        test1(3); 
+        // 함수명(); 중에 () 사이에 어떠한 값을 넣을경우
+        // 함수명의 파라미터와 같이 출력을 할수 있다.
+        test1(5);
+
+        function test3(a, b) {
+            console.log("더하기");
+            console.log(a + b);
+        }
+
+        test3(9, 3);
+        test3(10, 10);
+
+    </script>
+</body>
+</html>

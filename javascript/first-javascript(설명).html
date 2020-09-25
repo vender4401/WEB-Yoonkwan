@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <h1>나의 첫 자바스크립트(javascript)</h1>
+    <!-- 제목 -->
+    <button type="button" onclick="time()">
+    <!-- 1. 버튼 활성화시 time()이라는 변수 값 호출 -->
+    여기를 클릭시 화면에 날자와 시간이 출력 됩니다.<br>
+    Click me to display Date and Time.
+    </button>
+    <p id="result"></p>
+    <!-- 4. function 변수 에 설정 된 Date() 값이 출력됨. -->
+    <!--  -->
+    <script>
+        function time() { // 2. 버튼 활설시 변수값 호출에 반응 후 실행
+            document.getElementById("result").innerHTML = Date();
+        }
+        // 3. HTML 의 DOM(Document Object Model)에 메소드와 프로퍼티를 이용해 엑세스.
+        // getElementById() 는 element 에 포함된 id 를 찾고,
+        // ()안에 들어간 id는 = Date(); 의 값으로 변경 시킨다.
+    
+        // js 는 큰따옴와, 작은따옴표를 모두 허용함.
+
+
+    </script>
+</body>
+</html>

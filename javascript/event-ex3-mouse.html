@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <img id="id1" onmouseover="on()" onmouseout="off()" src="pic_bulboff.gif" alt="lamp">
+    <script>
+        function on() {
+            console.log('on');
+            document.getElementById("id1").src = 'pic_bulbon.gif';
+        }
+        function off() {
+            console.log('off');
+            document.getElementById("id1").src = 'pic_bulboff.gif';
+        }
+    </script>
+</body>
+</html>

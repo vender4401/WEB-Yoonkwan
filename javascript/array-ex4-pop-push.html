@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <script>
+        var heros = ["king", "hulk", "cap", "doc"];
+
+        for (var i = 0; i < heros.length; i++) {
+            console.log(heros[i]);
+        }
+        //push() 특정 배열에 추가 
+        heros.push ("marvel");
+        console.log(heros.length);
+
+        //pop() 특정 배열에 제거
+        heros.pop(); // () 빈 프로퍼티 작성시 맨 뒤 제거
+        heros.pop();
+        console.log(heros.length);
+
+        for (var i = 0; i < heros.length; i++) {
+            console.log(heros[i]);
+        }
+        
+    </script>
+</body>
+</html>

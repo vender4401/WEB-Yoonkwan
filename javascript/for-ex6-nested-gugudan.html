@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <div id="result"></div>
+    <script>
+        var txt = "";
+        
+        for (var j= 1; j <= 9; j++) {
+            for (var i = 1; i <= 9; i++)
+            txt += j + " &times " + i + " = " + (j*i) + "<br>";
+        
+
+            console.log(j);
+        }
+        document.getElementById("result").innerHTML = txt;
+
+    </script>
+</body>
+</html>

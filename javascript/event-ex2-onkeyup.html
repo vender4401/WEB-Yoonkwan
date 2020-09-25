@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <input onkeyup="show()" type="text" id="ex1">
+    <!-- 설정된 이벤트로 실행시 show() 라는 변수로 호출 과 ex1이라는 아이디로 전달 -->
+    <p id="result"></p>
+    <script>
+        function show() { // 호출된 show 
+            var txt = document.getElementById("ex1").value;
+            // ex1 이라는 아이디로 값을 전달 받고 txt라는 변수로 정의
+            // console.log(txt);
+            document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

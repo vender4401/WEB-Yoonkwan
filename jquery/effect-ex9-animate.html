@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .mydiv {
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $(".mydiv").click(function() {
+                $(this).animate({
+                    height: "500px", 
+                    width: "300px",
+                    fontSize: "50px",
+                    left: "100px"
+                },1000);
+            })
+            $(".mydiv").click(function() {
+                $(this).animate({
+                    height: "50px",
+                    width: "50px",
+                    fontSize: "5px"
+                },1000);
+            })
+            $(".mydiv").click(function() {
+                $(this).animate({
+                    opacity: "0",
+                    height: "0px",
+                    width: "0px",
+                    fontSize: "0px"
+                },1000);
+            })
+        });
+    </script>
+<head>
+<body>
+    <div class="mydiv">Yoon Kwan</div>
+</body>
+</html>

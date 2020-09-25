@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <h1 id="head1">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="head2">Vel quo voluptates rerum ipsum.</h1>
+    <h1 id="head3">Maxime error temporibus soluta doloremque!</h1>
+    <h1 id="head4">Veniam recusandae minus aspernatur dolore.</h1>
+    <h1 id="head5">Consequatur explicabo fuga odit debitis.</h1>
+
+    <script>
+        var head1 = document.getElementById("head1");
+        var heads = document.getElementsByTagName("h1");
+        console.log(heads.length);
+
+        for (var i = 0; i < heads.length; i++) {
+            console.log(heads[i].innerHTML);
+        }
+    </script>
+</body>
+</html>

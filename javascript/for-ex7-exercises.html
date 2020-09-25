@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <script>
+        console.log("----------1번");
+            for (var i = 0; i < 5; i++) {
+                var txt = "";
+                for (var j = 0; j <= i; j++) {
+                txt += "*";
+                }
+            console.log(txt);                    
+            }
+        console.log("----------2번");
+            for (var i = 4; i > -1; i--) { // 4 3 2 1 0
+                var txt = "";
+                for (var j = 0; j <= i ; j++) {
+                txt += "*";
+                }               
+                console.log(txt);
+            }   
+        console.log("----------3번");
+            for (var i = 0; i < 5; i++) {
+                var txt = "";
+                for (var j = 0; j <= i; j++) {
+                txt += "*";
+                }
+                for (var k = 5; k - j ;k--) {
+                txt += "#";
+                }                          
+                console.log(txt);
+            }
+        console.log("----------4번");
+            for (var i = 0; i < 5; i++) {
+                var txt = "";
+                for (var j = 0; j <= i; j++) {
+                txt += "#";
+                }
+                for (var k = 5; k - j ;k--) {
+                txt += "*";
+                }                          
+                console.log(txt);
+            }
+        console.log("----------5번");
+            for (var i = 0; i < 5; i++) {
+                var txt = "";
+                for (var j = 0; j <= i; j++) {
+                txt += " ";
+                }
+                for (var k = 6; k - j ;k--) {
+                txt += "*";
+                }                          
+                console.log(txt);
+            }
+        console.log("----------6번");
+            for (var i = 4; i > 0; i--) {
+                var txt = "";
+                for (var j = 0; j <= i; j++) {
+                txt += "#";
+                }
+                // for (var k = 4; k - i ;k++) {
+                // txt += "*";
+                // }                          
+                console.log(txt);
+            }
+            
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

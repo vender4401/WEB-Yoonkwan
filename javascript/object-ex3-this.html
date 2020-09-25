@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+<head>
+<body>
+    <script>
+        var car = {
+            name: "kia",
+            color: "black",
+            description: function() {
+                console.log(this.name + "," + this.black);
+                // this 키워드로 자기 자신의 프로퍼티 명을 정의 할수 있다
+            }
+        }
+        car.description();
+        car.color = "white";
+        car.description();
+
+
+    </script>
+</body>
+</html>

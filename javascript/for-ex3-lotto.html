@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            display: flex;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            line-height: 200px;
+
+            width: 200px;
+            background-color: blanchedalmond;
+            border-radius: 50%;
+            color: black;
+            font-size: 70px;            
+            border: 2px solid black;
+        }
+        #bonus {
+            line-height: 200px;
+            height: 200px;
+            width: 200px;
+            font-size: 30px;
+            border-radius: 50%;
+            background-color: burlywood;
+            color: red;
+            border: 2px solid black;
+
+        }
+    </style>
+<head>
+<body>
+    <button onclick="lotto(), bonuslotto()">로또 번호 출력</button>
+        <div id="result"></div>        
+        <div id="bonus"></div>    
+    <script>
+        function lotto() { // onclick 의 lotto호출
+            var numbers = "";
+            // 0,1,2,3,4,5,6
+            for (var i =0; i < 6; i++){
+                //0,1,2,3,4,5 총 6번까지의 반복을 실행한다.
+                console.log(i); // log 확인결과 6번 작동
+                var randomNumber = Math.floor(Math.random() * 45)+1;
+                numbers += "<p>" + randomNumber + "</p>";
+            }
+            document.getElementById("result").innerHTML = numbers;
+        }
+        function bonuslotto() { 
+            var bonus = "";            
+            for (var a =0; a <= 0; a++){
+                console.log(a);
+                var bonusNumber = Math.floor(Math.random() * 45)+1;
+                bonus += "<div>" + "BONUS " + bonusNumber + "</div>";
+            }
+            document.getElementById("bonus").innerHTML = bonus;
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+<head>
+<body>
+    <input id="첫째줄" type="text"> <br>
+    <input id="둘째줄" type="text"> <br>
+    <!-- text 입력시 첫째줄, 둘째줄로 입력전송-->
+    <button onclick="더하기()"><i class="fas fa-plus"></i></button>
+    <!-- 입력된 첫째줄 둘째줄의 값으로 활성화된 fas fa-plus 
+        아이콘을 누를시 "더하기" 라는 변수로 이동 -->
+    <p id="값1"></p>
+
+
+
+    <script>
+        function 리턴받을함수1(a, b){
+            return a + b;
+        }
+        function 더하기() { // body element 클릭시 "더하기" 호출 명령 받음.
+            var n1 = document.getElementById("첫째줄").value;
+            var n2 = document.getElementById("둘째줄").value;
+            console.log(n1);
+            console.log(n2);
+            // body element 에서 받아온 "첫째줄", "둘째줄" 값을 n1,n2 변수로 정의.
+            var 값 = 리턴받을함수1(Number(n1), Number(n2));
+            document.getElementById("값1").innerHTML = 값;
+        }
+
+
+    </script>
+</body>
+</html>

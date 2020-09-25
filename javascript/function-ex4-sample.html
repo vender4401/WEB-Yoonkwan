@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        
+    </style>
+<head>
+<body>
+    <input id="input1" type="text"> <br>
+    <input id="input2" type="text"> <br>
+    <!-- 순서1) 텍스트로 받는 input1과 input2 -->
+    <button onclick="multiply()"><i class="fas fa-times"></i></button>
+    <!-- 순서 2) i class"fas fa-times" 라는 아이콘을 클릭시 변수 multuply 을 작동시킴 -->
+    <p id="result1"></p>
+    <!-- 순서 7) Script에 있는 result1 값이 출력이 됨 -->
+
+    <input id="input3" type="text"> <br>
+    <input id="input4" type="text"> <br>
+    <button onclick="add()"><i class="fas fa-times"></i></button>
+    <p id="result2"></p>
+
+    <input id="input5" type="text"> <br>
+    <input id="input6" type="text"> <br>
+    <button onclick="subtract()"><i class="fas fa-times"></i></button>
+    <p id="result3"></p>
+
+    <script>
+        function multiply() { // 순서 3) body element 에서 변수 multiply을 호출 함으로 변수 실행
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            // 순서 4) num1,num2 변수는 body element 의 input1,input2 에서 받아온 값을 적용
+            var result = num1 * num2;
+            // 순서 5) resule 변수는 위의 num1,num2 변수값을 식에 맞게 변환한다.
+            document.getElementById("result1").innerHTML = result;
+            // 순서 6) 그렇게 result 변수의 값을 받으면 "resylt1" 이라는 이름의 HTMl에게 값이 보내진다
+            // 순서 대로 실행 됨
+        }
+        function add() {
+            var num3 = document.getElementById("input3").value;
+            var num4 = document.getElementById("input4").value;
+            var result = Number(num3) + Number(num4);
+            // num3, num4가 텍스트로 인식 되어있기 때문에 숫자로인식하도록 Number() 입력
+            document.getElementById("result2").innerHTML = result;
+        }
+        function subtract() {
+            var num5 = document.getElementById("input5").value;
+            var num6 = document.getElementById("input6").value;
+            var result = num5 - num6;
+            document.getElementById("result3").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
