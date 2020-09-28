@@ -8,6 +8,7 @@
     <script>
         $(document).ready(function() {
             $("div").children().css("border", "5px dotted red");
+            // div의 모든 직계 자손을 적용한다.
             $("div").children(".note").css("color", "blue");
             $("div>.note").css("background-color", "black");
         });

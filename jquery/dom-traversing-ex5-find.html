@@ -7,9 +7,28 @@
     </style>
     <script>
         $(document).ready(function() {
+            $("div").find("span").css("border", "5px solid green");
+            // div 의 하위 요소인것들을 모두 적용
+            $("div span").css("border-style", "dotted");
         });
     </script>
 <head>
 <body>
+    <div>
+        <p><span>Lorem, ipsum dolor.</span></p>
+    </div>
+    <div>
+        <p><span>Lorem, ipsum dolor.</span></p>
+    </div>
+    <div>
+        <p><span>Lorem, ipsum dolor.</span></p>
+    </div>
+    <div>
+        <p><span>Lorem ipsum dolor sit.</span></p>
+    </div>
+    <div>
+        <p><span>Lorem ipsum dolor sit.</span></p>
+    </div>
+
 </body>
 </html>

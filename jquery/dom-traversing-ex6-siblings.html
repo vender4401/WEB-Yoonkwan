@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("h3").siblings().css("font-size", "50px");
+            // h3 을 제외한 모든 형제 엘레멘트
+            $("h3").next().css("color", "red");
+            // h3 다음 엘레멘트 하나
+            $("h3").nextAll().css("border", "5px solid green");
+            // h3 다음 엘레멘트 의 모두
+
+
+        });
+    </script>
+<head>
+<body>
+    <h1>Lorem.</h1>
+    <h2>Earum.</h2>
+    <h3>Obcaecati.</h3>
+    <h4>Suscipit?</h4>
+    <h5>Delectus!</h5>
+    <h6>Consequuntur!</h6>
+</body>
+</html>
