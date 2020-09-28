@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("div").children().css("border", "5px dotted red");
+            $("div").children(".note").css("color", "blue");
+            $("div>.note").css("background-color", "black");
+        });
+    </script>
+<head>
+<body>
+    <div>
+        <p class="note"><span>Lorem, ipsum dolor.</span></p>
+    </div>
+    <div>
+        <p class="note"><span>Velit, repellendus quod!</span></p>
+    </div>
+    <div>
+        <p><span>Accusantium, cum dolore.</span></p>
+    </div>
+</body>
+</html>

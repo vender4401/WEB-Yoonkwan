@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#input1").keyup(function() {
+            var v = $("#input1").val();
+
+            $("#div1").attr(v);
+            // div1의 값을 변수=v에 설정된 곳으로 텍스트 반환 한다.
+            $("#div2").html(v);
+            //  div2의 값을 변수=v에 설정된 곳으로 html 형식으로 반환한다.
+            $("#input2").val(v);
+            //  input2 의 값을 변수=v 에 설정된 곳으로 value값으로 반환 한다.
+            })
+        });
+    </script>
+<head>
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>

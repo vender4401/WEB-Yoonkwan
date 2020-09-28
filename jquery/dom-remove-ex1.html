@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#div1").remove();
+            // 엘레멘트 및 하위 요소 자체가 삭제됨
+            $("#div2").empty();
+            // 콘텐츠만 삭제됨
+        });
+    </script>
+<head>
+<body>
+    <div id="div1">Lorem, ipsum dolor.</div>
+    <div id="div1">Lorem, ipsum dolor.</div>
+    <div id="div1">Lorem, ipsum dolor.</div>
+    <div id="div1">Lorem, ipsum dolor.</div>
+    <div id="div1">Lorem, ipsum dolor.</div>
+    <div id="div2">Tempore, vero fugit!</div>
+</body>
+</html>

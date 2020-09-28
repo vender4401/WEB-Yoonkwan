@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        // 정보를 가져오다.
+        $(document).ready(function() {
+            var t = $("#head1").text();
+            var h = $("#head2").html();
+            
+            
+            console.log(t);
+            console.log(h);
+
+            var j = $("#input1").val();
+            console.log(j);
+            
+            $("#input1").keyup(function() {
+                var val = $(this).val();
+                console.log(val);
+            })
+        });
+    </script>
+<head>
+<body>
+    <h1 id="head1">Lorem, <span>ipsum</span> dolor.</h1>
+    <h1 id="head2">Nemo, <span>maxime</span>at laboriosam!</h1>
+    <h1 id="head3">Corrupti, ullam quam?</h1>
+
+    <input type="text" id="input1" value="korea">
+
+</body>
+</html>
